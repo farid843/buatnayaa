@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Untuk Naya 💙</title>
+
+<style>
+body {
+  margin:0;
+  font-family:'Segoe UI', sans-serif;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  overflow:hidden;
+  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+/* BACKGROUND ANIMASI */
+@keyframes gradient {
+  0% {background-position:0% 50%;}
+  50% {background-position:100% 50%;}
+  100% {background-position:0% 50%;}
+}
+
+/* CARD */
+.card {
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(15px);
+  padding:30px;
+  border-radius:20px;
+  width:350px;
+  text-align:center;
+  color:#333;
+  box-shadow:0 10px 30px rgba(0,0,0,0.2);
+  animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+  from {opacity:0; transform:translateY(30px);}
+  to {opacity:1; transform:translateY(0);}
+}
+
+h2 {
+  margin-bottom:15px;
+}
+
+p {
+  line-height:1.6;
+}
+
+/* BUTTON */
+button {
+  margin-top:20px;
+  padding:10px 15px;
+  border:none;
+  border-radius:10px;
+  background:#ff6a88;
+  color:white;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover {
+  transform:scale(1.05);
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+  <h2>Untuk Naya 💙</h2>
+
+  <p id="text">
+    Klik tombol di bawah ya...
+  </p>
+
+  <button onclick="showMessage()">Buka Pesan 💌</button>
+</div>
+
+<script>
+function showMessage(){
+  document.getElementById("text").innerHTML = `
+  Naya, jangan sedih terus ya.<br><br>
+  Hidup memang nggak selalu sesuai harapan,
+  tapi naya harus tetap semangat.<br><br>
+
+  Jangan banyak begadang, jaga kesehatan naya.<br>
+  Jangan lupa makan juga ya naya.<br><br>
+
+  Jangan tinggalkan sholat,
+  karena itu yang akan selalu nenangin hati naya.<br><br>
+
+  Jaga diri naya baik-baik,
+  termasuk cara berpakaian naya.<br><br>
+
+  Tetap semangat ya naya.<br><br>
+
+  naya harus terus berusaha
+  menjadi versi yang lebih baik 💙
+  `;
+}
+</script>
+
+</body>
+</html>
